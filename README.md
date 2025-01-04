@@ -83,11 +83,35 @@ FROM `axial-keep-445022-e1.Ontario_Economics.Ontario_data`
 GROUP BY 1
 ORDER BY 1;
 ```
-I then wanted to see the how the Gross Domestic Product at market prices changes year over year. This query is very simple as all we have to do is select the year and SUM the GDP_Market_Prices. We also cant forget to group and order by the year. 
+The next three queries are similar in how they are written. the first query is to see how the the Gross Domestic Product at market prices changes year over year. This query is very simple as all we have to do is select the year and SUM the GDP_Market_Prices. We also cant forget to group and order by the year. The same query structure is followed with the following two queries. In the second query I am trying to figure our trends in gross and net operating surplus for corpoorations over the years. I used the SUM function on both 'Gross_Op_Surplus' and 'Net_Corp_Surplus' to sum the total for each year. The last query is to look at how the consumption of fixed capital for corporations, government, nonprofit institutions, and unincorporated businesses changed over the years. The SUM function was used again in this query to SUM the 'Corp_Fixed_Cap', 'Gov_Nonprofit_Fixed_Cap', and the ' Unincorp_Fixed_Cap'. The GROUP BY function was used to group the aggregated results by the year. 
+
 ``` SQL
 SELECT ` Year`, SUM(GDP_Market_prices ) AS Sum_GDP
 FROM `axial-keep-445022-e1.Ontario_Economics.Ontario_data`  
 GROUP BY 1
 ORDER BY 1;
+```
+```SQL
+/*Question Six */
+SELECT ` Year`, SUM(Gross_Op_Surplus) AS Total_Gross_Op_Surplus, SUM(Net_Corp_Surplus) AS Total_Net_Corp_Surplus
+FROM `axial-keep-445022-e1.Ontario_Economics.Ontario_data`  
+GROUP BY 1
+ORDER BY 1;
+```
+```SQL
+SELECT  ` Year`, SUM(Corp_Fixed_Cap) AS Total_Corp_Fixed_Cap, SUM(Gov_Nonprofit_Fixed_Cap) AS Total_Gov_Nonprofit_Fixed_Cap,
+SUM(` Unincorp_Fixed_Cap`) AS Total_Unincorp_Fixed_Cap
+FROM `axial-keep-445022-e1.Ontario_Economics.Ontario_data`  
+GROUP BY 1
+ORDER BY 1;
+```
+### Results/Findings
+The analysis results are summarized as follows:
+1. This graph  <img width="1612" alt="Q1" src="https://github.com/user-attachments/assets/d9931861-830c-4032-95e5-d260396104e4" />
+2. <img width="1606" alt="Q2" src="https://github.com/user-attachments/assets/c6b0768b-23df-4777-bfa3-a59ff3d4fd29" />
+3. <img width="1612" alt="Q3" src="https://github.com/user-attachments/assets/c4be77e6-608c-48b3-a650-da36fd42c027" />
+4. <img width="1536" alt="Q5" src="https://github.com/user-attachments/assets/ad63d7e2-1946-46c7-b634-23340aba5a44" />
+5. <img width="1610" alt="Q7" src="https://github.com/user-attachments/assets/aa5b9385-3acb-4f99-b722-151bc35c3875" />
+
 
 
