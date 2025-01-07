@@ -107,7 +107,7 @@ ORDER BY 1;
 ```
 ### Results/Findings
 The analysis results are summarized as follows:
-1. This graph  <img width="1612" alt="Q1" src="https://github.com/user-attachments/assets/d9931861-830c-4032-95e5-d260396104e4" />
+1. This scatter plot shows the correlation between employee compensation and GDP growth. Total GDP is on the x-axis and on the Y-axis we have "Total Employee Compensation". In the scatter plot we can we there there is a positive correlation. This means that as employee compensation increases, GDP also tends to increase. This positive relationship would indicate that greater overall exonomic output and productivity is associated with higher employee compensation. This could be becuase higher employee compensation leads to more disposable income. This increase in disposable income then increased comsumer spending which then contributes to a higher GDP. Higher wages can also increase employee morale, which would then increase productivity and efficiency.   <img width="1612" alt="Q1" src="https://github.com/user-attachments/assets/d9931861-830c-4032-95e5-d260396104e4" />
 2. <img width="1606" alt="Q2" src="https://github.com/user-attachments/assets/c6b0768b-23df-4777-bfa3-a59ff3d4fd29" />
 3. <img width="1612" alt="Q3" src="https://github.com/user-attachments/assets/c4be77e6-608c-48b3-a650-da36fd42c027" />
 4. <img width="1536" alt="Q5" src="https://github.com/user-attachments/assets/ad63d7e2-1946-46c7-b634-23340aba5a44" />
