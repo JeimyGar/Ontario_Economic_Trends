@@ -11,8 +11,6 @@
   
 Exploring current and long-term economic trends to provide businesses and policymakers with a better understanding of their implication for the province 
 
-### Project Overview
-YEE
 
 ### Data Sources
 Ontario Economic Accounts provides a quarterly assessment of the current state of Ontario economy. This data set includes historical data that offers data spanning from January 1, 1981 to June 30, 2024 and can be found [here](https://www.kaggle.com/datasets/noeyislearning/ontario-economic-accounts/data?select=gross_domestic_product_income_based.csv). This dataset offers comprehensive insight into various economic indicators for Ontario. Each year is broken down by quarters to measure the parameters. 
